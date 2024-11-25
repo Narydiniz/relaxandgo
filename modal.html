@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Modal de Login -->
+    <button id="btn-login">Login</button>
+
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="form-login">
+          <input type="email" id="email" placeholder="Email">
+          <input type="password" id="senha" placeholder="Senha">
+          <textarea cols="10" rows="4" maxlength="2000" name="Menssage" id="menssagem" placeholder="Como podemos ajudar?" required></textarea>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!--...................................................................................................................................-->
+     <!--Cadastro Concierge / Direcionando para o login-->
+     <button id="btn-cadastro">Cadastro Concierge</button>
+
+    <div id="modal-cadastro" class="modal">
+        <div class="modal-content">
+            <span class="close" >&times;</span>
+            <h2>Cadastro Concierge</h2>
+            <form id="form-cadastro">
+                <input type="name" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="phone" id="contato" placeholder="Numero para contato" required>
+                <input type="city" id="cidade" placeholder="Cidade" required>
+                <input type="endereco" id="endereco" placeholder="endereco" required>
+                <input type="password" id="senha" placeholder="Senha" required> 
+                <button type="submit">Cadastrar</button> 
+
+            </form>
+        </div>
+    </div>
+
+
+    <!--...................................................................................................................................-->
+
+
+    <!--Cadastro Cliente / Direcionando para o login-->
+    <button id="btn-cadastro-cliente">Cadastre-se</button>
+
+    <div id="modal-cadastro-cliente" class="modal">
+        <div class="modal-content">
+        <span class="close" >&times;</span>
+        <h2>Cadastro Cliente</h2>
+        <form id="form-cadastro">
+            <input type="name" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="phone" id="contato" placeholder="Numero para contato" required>
+            <input type="address" id="endereco" placeholder="Endereco" required>
+            <input type="city" id="cidade" placeholder="Cidade" required>
+            <input type="state" id="estado" placeholder="Estado" required>
+            <input type="password" id="senha" placeholder="Senha" required> 
+            <button type="submit">Cadastrar</button>   
+
+        </form>
+        </div>
+    </div>
+
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="form-login">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="senha" placeholder="Senha" required> 
+            <button type="submit">Entrar</button>
+        </form>
+        </div>
+    </div>
+     
+    <!--***************************************************************************************************************************************-->
+
+            <!-- CARROSEL -->
+
+
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-bnt" id="radio1">
+        <input type="radio" name="radio-bnt" id="radio2">
+        <input type="radio" name="radio-bnt" id="radio3">
+        <input type="radio" name="radio-bnt" id="radio4">
+        <input type="radio" name="radio-bnt" id="radio5">
+        <input type="radio" name="radio-bnt" id="radio6">
+
+        <div class="slide-sobre">
+           <img src="public/files/imagens/carrocel (900 x 450 px)/1.png" alt="imagem1"> 
+        </div>
+
+        <div class="slide-img2">
+            <img src="public/files/imagens/carrocel (900 x 450 px)/2.png" alt="imagem2"> 
+        </div>
+
+        <div class="slide-img3">
+            <img src="public/files/imagens/carrocel (900 x 450 px)/3.png" alt="imagem3"> 
+        </div>
+
+        <div class="slide-img4">
+            <img src="public/files/imagens/carrocel (900 x 450 px)/4.png" alt="imagem4"> 
+        </div>
+
+        <div class="slide-img5">
+            <img src="public/files/imagens/carrocel (900 x 450 px)/5.png" alt="imagem5"> 
+        </div>
+
+        <div class="slide-img6">
+            <img src="public/files/imagens/carrocel (900 x 450 px)/6.png" alt="imagem6"> 
+        </div>
+
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
+        </div>
+
+    </div>
+
+    <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
