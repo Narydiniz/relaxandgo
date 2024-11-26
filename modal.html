@@ -10,16 +10,16 @@
 <body>
 
     <!-- Modal de Login -->
-    <button id="btn-login">Login</button>
+    <button class="login" id="btn-login">Login</button>
 
     <div id="modal-login" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Login</h2>
-        <form id="form-login">
-          <input type="email" id="email" placeholder="Email">
-          <input type="password" id="senha" placeholder="Senha">
-          <textarea cols="10" rows="4" maxlength="2000" name="Menssage" id="menssagem" placeholder="Como podemos ajudar?" required></textarea>
+        <form class="contener-word" id="form-login">
+          <input class="word" type="email" id="email" placeholder="Email">
+          <input class="word" type="password" id="senha" placeholder="Senha">
+          <textarea class="word" cols="10" rows="4" maxlength="2000" name="Menssage" id="menssagem" placeholder="Como podemos ajudar?" required></textarea>
           <button type="submit">Entrar</button>
         </form>
       </div>
@@ -28,13 +28,13 @@
 
     <!--...................................................................................................................................-->
      <!--Cadastro Concierge / Direcionando para o login-->
-     <button id="btn-cadastro">Cadastro Concierge</button>
+     <button class="login" id="btn-cadastro">Cadastro Concierge</button>
 
-    <div id="modal-cadastro" class="modal">
-        <div class="modal-content">
+    <div id="modal-cadastro" class="modal-concierge">
+        <div class="modal-contener">
             <span class="close" >&times;</span>
             <h2>Cadastro Concierge</h2>
-            <form id="form-cadastro">
+            <form class="formulario-cads" id="form-cadastro">
                 <input type="name" id="nome" placeholder="Nome" required>
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="phone" id="contato" placeholder="Numero para contato" required>
@@ -54,7 +54,7 @@
     <!--Cadastro Cliente / Direcionando para o login-->
     <button id="btn-cadastro-cliente">Cadastre-se</button>
 
-    <div id="modal-cadastro-cliente" class="modal">
+    <div id="modal-cadastro-cliente" class="modal-clientes">
         <div class="modal-content">
         <span class="close" >&times;</span>
         <h2>Cadastro Cliente</h2>

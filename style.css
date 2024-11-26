@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color: #ffffff;
 }
 a{
     text-decoration: none;
@@ -14,7 +14,6 @@ a{
 /* Body */
 
 .topo{
-    background-color: black;
     background-image: url(/public/files/imagens/teste.png);
     background-repeat: no-repeat ;
     background-position: start;
@@ -143,41 +142,76 @@ li{
     font-size: 22px;
     margin-left: 40%;
 }
-/*style modal*/
-.modal {
-    display: none; /* Esconder o modal por padrão */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 60%;
-    height: 60%;
-    overflow: auto;
-    background-color: olive ;
 
-  }
+/*style modal login*/
+.modal {
+    background-color: rgba(10, 10, 10, 0.47);
+    position: fixed;
+    width: 100vw;
+    display: none;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
   
-  .modal-content {
-    background-color: #fefefe;
+.modal.login{
+    display: block;
+} 
+
+.modal-content {
+    background-color: #ffffffb6;
     margin: 15% auto;
-    padding: 20px;
+    max-width: 700px;
     border: 1px solid #888;
-    width: 80%;
-  }
+    margin-top: 15%;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.contener-word{
+    padding: 70px;
+    display:grid;
+    margin-bottom: 10px;
+}
+
+.word{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #161616;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+
+}
   
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: 20px; 
-  }
-  
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+/*modal cadastro concierge*/
+
+.modal-concierge{
+    background-color: rgba(10, 10, 10, 0.47);
+    position: fixed;
+    width: 100vw;
+    display: none;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.modal-concierge.login{
+    display: block; 
+}
 
   /* STYLE CARROSEL*/
 
@@ -279,4 +313,32 @@ li{
 }
 #radio5:checked ~.navigation-auto .auto-btn5{
     background-color: #d5f1a1;
+}
+
+.servico-title{
+    display: flex;
+    align-items: center;
+    padding-top: 88px;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.ex-servicos {
+    display: flex;
+    padding-bottom: 88px;
+    justify-content: center;
+}
+.servico-caixa {
+    border: 2px solid #dfdfdf;
+    border-radius: 5px;
+    display: flex; 
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.img-servicos {
+    width: 350px;
+}
+.servico-legend{
+    padding: 25px;
+    font-size: 20px;
 }
